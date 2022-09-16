@@ -2,7 +2,9 @@ package Q1_02_Check_Permutation;
 
 public class QuestionB {	
 	public static boolean permutation(String s, String t) {
-		if (s.length() != t.length()) return false; // Permutations must be same length
+		if (s.length() != t.length()) {
+			return false; // Permutations must be same length
+		}
 		
 		int[] letters = new int[128]; // Assumption: ASCII
 		for (int i = 0; i < s.length(); i++) {
