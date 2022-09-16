@@ -3,14 +3,15 @@ package Q1_01_Is_Unique;
 public class Tester {
 	
 	public static void main(String[] args) {
-		String[] words = {"abcde", "hello", "apple", "kite", "padle"};
+		String[] words = {"abcde", "hello", "apple", "kite", "padle", "abcad"};
 		for (String word : words) {
 			boolean wordA =  QuestionA.isUniqueChars(word);
 			boolean wordB =  QuestionB.isUniqueChars(word);
-			if (wordA == wordB) {
+			boolean wordC =  QuestionC.isUniqueChars(word);
+			if (wordA == wordB == wordC) {
 				System.out.println(word + ": " + wordA);
 			} else {
-				System.out.println(word + ": " + wordA + " vs " + wordB);
+				System.out.println(word + ": " + wordA + " vs " + wordB + " vs " + wordC);
 			}
 		}
 	}
