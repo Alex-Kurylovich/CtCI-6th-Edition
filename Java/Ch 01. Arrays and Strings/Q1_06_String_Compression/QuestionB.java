@@ -18,7 +18,7 @@ public class QuestionB {
 	}
 	
 	public static void main(String[] args) {
-		String str = "aa";
+		String str = "aabbbccccxx";
 		System.out.println(str);
 		System.out.println(compress(str));
 	}
