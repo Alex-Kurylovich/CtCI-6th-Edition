@@ -12,8 +12,11 @@ public class Intro {
 			
 			thread1.start();
 			thread2.start();
-			
-			Thread.sleep(3000 * 3);
+
+            thread1.join();
+            thread2.join();
+            System.out.println("Main thread resumed after worker threads completed.");
+            // Thread.sleep(3000 * 3);
 		}  catch (InterruptedException exc) {
 			System.out.println("Program Interrupted.");
 		}
