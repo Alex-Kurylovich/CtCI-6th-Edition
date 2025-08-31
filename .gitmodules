@@ -3,7 +3,7 @@
 	url = https://github.com/careercup/CtCI-6th-Edition-php.git
 [submodule "cpp"]
 	path = cpp
-	url = https://github.com/Alex-Kurylovich/cpp.git
+	url = https://github.com/careercup/CtCI-6th-Edition-cpp.git
 [submodule "Clojure"]
 	path = Clojure
 	url = https://github.com/careercup/CtCI-6th-Edition-Clojure.git
